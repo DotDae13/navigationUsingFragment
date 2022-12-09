@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">navigationUsingFragment</string>
+    <string name="hello_blank_fragment">What would you like to learn about?</string>
+    <string name="cpp_text">This is CPP</string>
+    <string name="go_back_button">Go Back</string>
+    <string name="cpp_logo">cpp logo</string>
+    <string name="cpp_button">C++</string>
+    <string name="python_button">Python</string>
+    <string name="kotlin_button">Kotlin</string>
+    <string name="solidity_button">Solidity</string>
+    <string name="csharp_button">C#</string>
+    <string name="python_text">This is Python</string>
+    <string name="python_logo">python logo</string>
+    <string name="kotlin_text">This is Kotlin</string>
+    <string name="kotlin_logo">kotlin logo</string>
+    <string name="solidity_text">This is Solidity</string>
+    <string name="solidity_image">solidity image</string>
+    <string name="csharp_image">CSharp image</string>
+    <string name="csharp_text">This is CSharp</string>
+</resources>

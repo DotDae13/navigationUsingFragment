@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationusingfragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_cppFragment"
+            app:destination="@id/cppFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pythonFragment"
+            app:destination="@id/pythonFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kotlinFragment"
+            app:destination="@id/kotlinFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_solidityFragment"
+            app:destination="@id/solidityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_CSharpFragment"
+            app:destination="@id/CSharpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_CSharpFragment2"
+            app:destination="@id/CSharpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cppFragment"
+        android:name="com.example.navigationusingfragment.cppFragment"
+        android:label="fragment_cpp"
+        tools:layout="@layout/fragment_cpp" >
+        <action
+            android:id="@+id/action_cppFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pythonFragment"
+        android:name="com.example.navigationusingfragment.PythonFragment"
+        android:label="fragment_python"
+        tools:layout="@layout/fragment_python" >
+        <action
+            android:id="@+id/action_pythonFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kotlinFragment"
+        android:name="com.example.navigationusingfragment.KotlinFragment"
+        android:label="fragment_kotlin"
+        tools:layout="@layout/fragment_kotlin" >
+        <action
+            android:id="@+id/action_kotlinFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/solidityFragment"
+        android:name="com.example.navigationusingfragment.SolidityFragment"
+        android:label="fragment_solidity"
+        tools:layout="@layout/fragment_solidity" >
+        <action
+            android:id="@+id/action_solidityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CSharpFragment"
+        android:name="com.example.navigationusingfragment.CSharpFragment"
+        android:label="fragment_c_sharp"
+        tools:layout="@layout/fragment_c_sharp" >
+        <action
+            android:id="@+id/action_CSharpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
